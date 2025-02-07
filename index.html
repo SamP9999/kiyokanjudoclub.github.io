@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiyokan Judo Club</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">KIYOKAN JUDO</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="https://www.facebook.com/profile.php?id=100057417311622&sk=photos_by" target="_blank">Gallery</a></li>
+            </ul>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/p/Kiyokan-Judo-Club-100057417311622/" class="social-icon facebook" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>KIYOKAN<br>JUDO CLUB</h1>
+                <p class="tagline">Master the Gentle Way</p>
+                <a href="mailto:H.j.porter@outlook.com" class="cta-button">JOIN NOW</a>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="feature-card">
+                <img src="images/beginner-judo.jpg" alt="Beginner Judo Training">
+                <h2>BECOME STRONGER</h2>
+                <p>Start your journey in judo with our experienced instructors. Perfect for beginners and advanced practitioners.</p>
+            </div>
+
+            <div class="feature-card">
+                <img src="images/judo-classes.jpg" alt="Judo Classes">
+                <h2>CLASSES</h2>
+                <p>From fundamentals to advanced techniques, we offer classes for all skill levels and age groups.</p>
+            </div>
+
+            <div class="feature-card">
+                <img src="images/judo-competition.jpg" alt="Judo Tournaments">
+                <h2>TOURNAMENTS</h2>
+                <p>Participate in local and regional tournaments to test your skills and represent our club.</p>
+            </div>
+        </section>
+
+        <section class="locations" id="locations">
+            <h2>OUR LOCATIONS</h2>
+            <div class="location-cards">
+                <div class="location-card">
+                    <h3>Kiyokan Judo Club East</h3>
+                    <p>37 McAllister Dr, Saint John, NB E2L 3Y2</p>
+                </div>
+                <div class="location-card">
+                    <h3>Kiyokan Judo Club</h3>
+                    <p>711 Dever Rd, Saint John, NB E2M 4J2</p>
+                </div>
+            </div>
+            <div class="map-container">
+                <div id="map" style="height: 450px;"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Kiyokan Judo Club. All rights reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script>
+        var map = L.map('map').setView([45.285, -66.063], 11); // Center between both locations
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
+
+        // Add markers for both locations with exact coordinates
+        L.marker([45.313657284101915, -66.02034330241592]).addTo(map) // McAllister Dr location (East)
+            .bindPopup('<strong>Kiyokan Judo Club East</strong><br>37 McAllister Dr, Saint John, NB E2L 3Y2');
+
+        L.marker([45.25643926689141, -66.10690821591021]).addTo(map) // Dever Rd location
+            .bindPopup('<strong>Kiyokan Judo Club</strong><br>711 Dever Rd, Saint John, NB E2M 4J2');
+
+        // Fit bounds to show both markers
+        var bounds = L.latLngBounds([
+            [45.313657284101915, -66.02034330241592],
+            [45.25643926689141, -66.10690821591021]
+        ]);
+        map.fitBounds(bounds, { padding: [50, 50] });
+    </script>
+</body>
+</html> 

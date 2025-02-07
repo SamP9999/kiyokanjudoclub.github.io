@@ -1,0 +1,475 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.6;
+    color: #fff;
+    background-color: #1a1a1a;
+    font-weight: 400;
+}
+
+/* Header and Navigation */
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.logo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #fff;
+    flex: 1;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    justify-content: center;
+    flex: 2;
+}
+
+.nav-links a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    position: relative;
+}
+
+.nav-links a:hover {
+    color: #DC143C;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: #DC143C;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.nav-links a:hover::after {
+    width: 80%;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.social-icon {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.social-icon.facebook {
+    background-color: #1877f2;
+}
+
+.social-icon.facebook:hover {
+    background-color: #0d65d9;
+    transform: scale(1.1);
+}
+
+/* Hero Section */
+.hero {
+    height: 80vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url('images/judogif.gif') center/100% auto no-repeat;
+    background-color: #1a1a1a;
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.hero-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4.5rem;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+}
+
+.tagline {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.2rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    color: #FF3B3F;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.cta-button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #DC143C;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #B22222;
+}
+
+/* Features Section */
+.features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: -100px auto 0;
+    padding: 0 2rem;
+    position: relative;
+}
+
+.feature-card {
+    background-color: #2a2a2a;
+    padding: 1rem;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.feature-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.feature-card h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #DC143C;
+    letter-spacing: 0.5px;
+}
+
+.feature-card p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    color: #ccc;
+    line-height: 1.7;
+}
+
+.more-details {
+    display: inline-block;
+    color: #DC143C;
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.3s;
+}
+
+.more-details:hover {
+    color: #B22222;
+}
+
+/* Locations Section */
+.locations {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+}
+
+.locations h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #DC143C;
+}
+
+.location-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.location-card {
+    background-color: #2a2a2a;
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.location-card h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: #DC143C;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.location-card p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #fff;
+}
+
+.map-container {
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #2a2a2a;
+    margin-top: 4rem;
+}
+
+/* About Section */
+.about {
+    background-color: #2a2a2a;
+    padding: 8rem 2rem 6rem;
+    min-height: 100vh;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.class-hours {
+    text-align: center;
+    margin-bottom: 4rem;
+    background-color: #1a1a1a;
+    padding: 3rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.class-hours h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #DC143C;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+.class-schedule {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.age-group {
+    padding: 1.5rem;
+    background-color: #2a2a2a;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.age-group:hover {
+    transform: translateY(-5px);
+}
+
+.age-group h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: #DC143C;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.age-group p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+/* Contact Section */
+.contact-section {
+    text-align: center;
+    margin-bottom: 4rem;
+    background-color: #1a1a1a;
+    padding: 3rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #DC143C;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.contact-item {
+    padding: 1.5rem;
+    background-color: #2a2a2a;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.contact-item:hover {
+    transform: translateY(-5px);
+}
+
+.contact-item i {
+    font-size: 2rem;
+    color: #DC143C;
+    margin-bottom: 1rem;
+}
+
+.contact-item h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: #DC143C;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.contact-item p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+.contact-item p a {
+    color: #DC143C;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-item p a:hover {
+    color: #B22222;
+}
+
+/* Update Responsive Design */
+@media (max-width: 768px) {
+    .about {
+        padding: 4rem 1rem;
+    }
+
+    .class-schedule {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .class-hours {
+        padding: 2rem 1rem;
+    }
+
+    .class-hours h2 {
+        font-size: 2rem;
+    }
+
+    .about-info {
+        grid-template-columns: 1fr;
+    }
+
+    .info-item {
+        padding: 1rem;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .location-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .contact-section {
+        padding: 2rem 1rem;
+    }
+
+    .contact-section h2 {
+        font-size: 2rem;
+    }
+} 
