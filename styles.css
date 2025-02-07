@@ -417,8 +417,84 @@ footer {
     color: #B22222;
 }
 
-/* Update Responsive Design */
+/* Mobile Menu Button */
+.mobile-menu-btn {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin-left: auto;
+}
+
+.mobile-menu-btn span {
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    border-radius: 3px;
+    transition: all 0.3s linear;
+}
+
+/* Update media queries */
 @media (max-width: 768px) {
+    .mobile-menu-btn {
+        display: flex;
+        z-index: 1001;
+    }
+
+    .nav-links {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.95);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        z-index: 1000;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 1rem 0;
+    }
+
+    .nav-links a {
+        font-size: 1.5rem;
+    }
+
+    .social-icons {
+        position: fixed;
+        bottom: 2rem;
+        left: 0;
+        right: 0;
+        justify-content: center;
+        z-index: 1000;
+    }
+
+    /* Mobile menu button animation */
+    .mobile-menu-btn.active span:first-child {
+        transform: rotate(45deg) translate(8px, 8px);
+    }
+
+    .mobile-menu-btn.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .mobile-menu-btn.active span:last-child {
+        transform: rotate(-45deg) translate(7px, -7px);
+    }
+
     .about {
         padding: 4rem 1rem;
     }
@@ -446,10 +522,6 @@ footer {
 
     .features {
         grid-template-columns: 1fr;
-    }
-
-    .nav-links {
-        display: none;
     }
 
     .hero h1 {
