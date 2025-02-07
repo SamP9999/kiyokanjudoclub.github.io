@@ -40,6 +40,10 @@ nav {
     letter-spacing: 1px;
 }
 
+.logo::after {
+    display: none;
+}
+
 .nav-links {
     display: flex;
     list-style: none;
