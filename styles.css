@@ -44,6 +44,11 @@ nav {
     display: none;
 }
 
+.logo img {
+    max-height: 50px;
+    width: auto;
+}
+
 .nav-links {
     display: flex;
     list-style: none;
