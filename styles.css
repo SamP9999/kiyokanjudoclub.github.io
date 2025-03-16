@@ -117,8 +117,8 @@ nav {
 /* Hero Section */
 .hero {
     height: 80vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-                url('images/judogif.gif') center/100% auto no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url('android-chrome-512x512.png') center/contain no-repeat;
     background-color: #1a1a1a;
     display: flex;
     align-items: center;
