@@ -118,7 +118,7 @@ nav {
 .hero {
     height: 80vh;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-                url('images/judogif.gif') center/100% auto no-repeat;
+                url('images/judogif.gif') center/cover no-repeat;
     background-color: #1a1a1a;
     display: flex;
     align-items: center;
