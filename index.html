@@ -1,19 +1,32 @@
 <!-- GitHub Pages Site -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kiyokan Judo Club</title>
+    <title>Kiyokan Judo Club - Master the Gentle Way | Saint John, NB</title>
+    <meta name="description"
+        content="Join Kiyokan Judo Club in Saint John, NB. Classes for kids, teens, and adults at all skill levels. Two convenient locations. Beginner friendly.">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Raleway:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Kiyokan Judo Club - Master the Gentle Way">
+    <meta property="og:description"
+        content="Join Kiyokan Judo Club in Saint John, NB. Classes for kids, teens, and adults at all skill levels. Two convenient locations. Beginner friendly.">
+    <meta property="og:image" content="/images/hero-judo.jpg">
 </head>
+
 <body>
     <header>
         <nav>
@@ -26,11 +39,13 @@
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="https://www.facebook.com/profile.php?id=100057417311622&sk=photos_by" target="_blank">Gallery</a></li>
+                <li><a href="https://www.facebook.com/profile.php?id=100057417311622&sk=photos_by"
+                        target="_blank">Gallery</a></li>
                 <li><a href="https://www.judonb.org/schedule-1" target="_blank">Tournaments</a></li>
             </ul>
             <div class="social-icons">
-                <a href="https://www.facebook.com/p/Kiyokan-Judo-Club-100057417311622/" class="social-icon facebook" target="_blank">
+                <a href="https://www.facebook.com/p/Kiyokan-Judo-Club-100057417311622/" class="social-icon facebook"
+                    target="_blank">
                     <i class="fab fa-facebook-f"></i>
                 </a>
             </div>
@@ -38,31 +53,216 @@
     </header>
 
     <main>
-        <section class="hero">
+        <section class="hero" id="home">
             <div class="hero-content">
-                <h1>KIYOKAN<br>JUDO CLUB</h1>
-                <p class="tagline">Master the Gentle Way</p>
-                <a href="mailto:H.j.porter@outlook.com" class="cta-button">JOIN NOW</a>
+                <h1>Master the Gentle Way</h1>
+                <p class="hero-subtitle">KIYOKAN JUDO CLUB</p>
+                <p class="trust-strip">
+                    <span><i class="fas fa-check-circle"></i> Beginner friendly</span>
+                    <span><i class="fas fa-users"></i> Kids, Teens & Adults</span>
+                    <span><i class="fas fa-map-marker-alt"></i> Two locations</span>
+                </p>
+                <a href="about.html#about" class="cta-button">View Class Schedule</a>
             </div>
         </section>
 
         <section class="features">
-            <div class="feature-card">
+            <a href="about.html#about" class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-dumbbell"></i>
+                </div>
                 <img src="images/beginner-judo.jpg" alt="Beginner Judo Training">
-                <h2>BECOME STRONGER</h2>
-                <p>Start your journey in judo with our experienced instructors. Perfect for beginners and advanced judokas.</p>
-            </div>
+                <h2>Build Strength & Confidence</h2>
+                <p>Develop physical and mental strength through traditional judo training. Perfect for all skill levels.
+                </p>
+            </a>
 
-            <div class="feature-card">
+            <a href="about.html#about" class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-calendar-alt"></i>
+                </div>
                 <img src="images/judo-classes.jpg" alt="Judo Classes">
-                <h2>CLASSES</h2>
-                <p>From fundamentals to advanced techniques, we offer classes for all skill levels and age groups.</p>
-            </div>
+                <h2>Classes for All Ages</h2>
+                <p>Tiger (6-8), Middle (9-12), and Senior (13+) programs.</p>
+            </a>
 
-            <div class="feature-card">
+            <a href="https://www.judonb.org/schedule-1" target="_blank" rel="noopener noreferrer" class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-trophy"></i>
+                </div>
                 <img src="images/judo-competition.jpg" alt="Judo Tournaments">
-                <h2>TOURNAMENTS</h2>
-                <p>Participate in tournaments to test your skills and represent our club.</p>
+                <h2>Compete & Excel</h2>
+                <p>Test your skills in tournaments and represent Kiyokan Judo Club at provincial competitions.</p>
+            </a>
+        </section>
+
+        <section class="coaches-section" id="coaches">
+            <h2>Meet the Head Coach</h2>
+            <div class="coach-profile">
+                <div class="coach-photo">
+                    <img src="images/head-coach.jpg" alt="Head Coach at judo tournament">
+                </div>
+                <div class="coach-info">
+                    <h3>Jeff Porter</h3>
+                    <ul class="credentials">
+                        <li><i class="fas fa-check"></i> Sandan (三段) - 3rd degree black belt</li>
+                        <li><i class="fas fa-check"></i> Black belt with 30+ years experience</li>
+                        <li><i class="fas fa-check"></i> Certified Judo Canada instructor</li>
+                        <li><i class="fas fa-check"></i> Provincial & national competition coach</li>
+                        <li><i class="fas fa-check"></i> Dedicated to developing athletes of all ages and skill levels
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="expect-section" id="expect">
+            <h2>What to Expect in Your First Class</h2>
+            <div class="expect-content">
+                <ul class="expect-checklist">
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <strong>No experience needed</strong>
+                            <p>We welcome complete beginners and teach fundamentals from day one</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-tshirt"></i>
+                        <div>
+                            <strong>What to wear</strong>
+                            <p>Comfortable athletic clothing (t-shirt and sweatpants). Gi uniforms available for
+                                purchase</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <strong>Arrive 10 minutes early</strong>
+                            <p>Time to meet your instructor, tour the facility, and get oriented</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-handshake"></i>
+                        <div>
+                            <strong>Respectful environment</strong>
+                            <p>We emphasize discipline, respect, and mutual support in all classes</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-smile"></i>
+                        <div>
+                            <strong>Have fun!</strong>
+                            <p>Judo is challenging but rewarding. Enjoy the journey and make new friends</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="testimonials-section" id="testimonials">
+            <h2>What Our Members Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="quote-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p class="testimonial-text">"Kiyokan has been incredible for my son's confidence and discipline. The
+                        coaches are patient and skilled, and he looks forward to every class."</p>
+                    <p class="testimonial-author">— Sarah M.</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="quote-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p class="testimonial-text">"Started as a complete beginner at 35. The welcoming atmosphere and
+                        excellent instruction made it easy to learn. Best decision I've made for my fitness."</p>
+                    <p class="testimonial-author">— Michael T.</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="quote-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p class="testimonial-text">"Great club with a strong sense of community. My daughter has grown so
+                        much in skill and character since joining. Highly recommend!"</p>
+                    <p class="testimonial-author">— Jennifer L.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section" id="faq">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq1">
+                        <span>Do I need any previous experience to join?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer" id="faq1">
+                        <p>No experience is required! We welcome complete beginners and provide instruction from the
+                            ground up. Our coaches are experienced in teaching students of all levels, from first-timers
+                            to advanced judokas.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq2">
+                        <span>What should I wear to my first class?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer" id="faq2">
+                        <p>For your first few classes, wear comfortable athletic clothing like a t-shirt and sweatpants.
+                            Once you decide to continue, you'll need a judo gi (uniform), which can be purchased through
+                            the club or at martial arts supply stores.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq3">
+                        <span>What age groups do you teach?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer" id="faq3">
+                        <p>We offer programs for Tiger Age (6-8 years), Middle Age (9-12 years), and Senior (13+ years,
+                            including adults). Each age group has dedicated class times tailored to their developmental
+                            stage and skill level.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq4">
+                        <span>Can I try a class before committing?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer" id="faq4">
+                        <p>Absolutely! We encourage prospective students to observe or participate in a trial class.
+                            Contact us to schedule your visit and we'll make sure you feel welcome and informed about
+                            our program.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq5">
+                        <span>How much does it cost to join?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer" id="faq5">
+                        <p>Please contact us directly for current membership rates and payment options. Email us at
+                            H.j.porter@outlook.com or call (506) 343-3824.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq6">
+                        <span>Which location should I attend?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer" id="faq6">
+                        <p>We have two locations in Saint John: Kiyokan Judo Club at 711 Dever Rd and Kiyokan Judo Club
+                            East at 37 McAllister Dr. Both locations offer the same high-quality instruction. Choose the
+                            one most convenient for you!</p>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -85,7 +285,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2024 Kiyokan Judo Club.</p>
+        <p>&copy; 2026 Kiyokan Judo Club.</p>
     </footer>
 
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
@@ -110,11 +310,11 @@
         map.fitBounds(bounds, { padding: [50, 50] });
 
         // Mobile menu functionality
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const menuBtn = document.querySelector('.mobile-menu-btn');
             const navLinks = document.querySelector('.nav-links');
-            
-            menuBtn.addEventListener('click', function() {
+
+            menuBtn.addEventListener('click', function () {
                 menuBtn.classList.toggle('active');
                 navLinks.classList.toggle('active');
             });
@@ -127,6 +327,49 @@
                 });
             });
         });
+
+        // FAQ Accordion functionality
+        const faqQuestions = document.querySelectorAll('.faq-question');
+
+        faqQuestions.forEach((question, index) => {
+            question.addEventListener('click', () => {
+                toggleFAQ(question);
+            });
+
+            // Keyboard navigation
+            question.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    toggleFAQ(question);
+                } else if (e.key === 'ArrowDown') {
+                    e.preventDefault();
+                    const nextQuestion = faqQuestions[index + 1];
+                    if (nextQuestion) nextQuestion.focus();
+                } else if (e.key === 'ArrowUp') {
+                    e.preventDefault();
+                    const prevQuestion = faqQuestions[index - 1];
+                    if (prevQuestion) prevQuestion.focus();
+                }
+            });
+        });
+
+        function toggleFAQ(question) {
+            const answer = question.nextElementSibling;
+            const isExpanded = question.getAttribute('aria-expanded') === 'true';
+
+            // Close all other FAQs
+            faqQuestions.forEach(q => {
+                if (q !== question) {
+                    q.setAttribute('aria-expanded', 'false');
+                    q.nextElementSibling.classList.remove('active');
+                }
+            });
+
+            // Toggle current FAQ
+            question.setAttribute('aria-expanded', !isExpanded);
+            answer.classList.toggle('active');
+        }
     </script>
 </body>
-</html> 
+
+</html>

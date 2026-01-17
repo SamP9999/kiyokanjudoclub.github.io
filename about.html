@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - Kiyokan Judo Club</title>
+    <title>About & Schedule - Kiyokan Judo Club | Saint John, NB</title>
+    <meta name="description"
+        content="View class schedules and contact information for Kiyokan Judo Club. Programs for ages 6+ at two Saint John locations. Tiger, Middle, and Senior classes available.">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -11,7 +14,15 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="About & Schedule - Kiyokan Judo Club">
+    <meta property="og:description"
+        content="View class schedules and contact information for Kiyokan Judo Club in Saint John, NB. Programs for all ages.">
+    <meta property="og:image" content="/images/hero-judo.jpg">
 </head>
+
 <body>
     <header>
         <nav>
@@ -24,11 +35,13 @@
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="https://www.facebook.com/profile.php?id=100057417311622&sk=photos_by" target="_blank">Gallery</a></li>
+                <li><a href="https://www.facebook.com/profile.php?id=100057417311622&sk=photos_by"
+                        target="_blank">Gallery</a></li>
                 <li><a href="https://www.judonb.org/schedule-1" target="_blank">Tournaments</a></li>
             </ul>
             <div class="social-icons">
-                <a href="https://www.facebook.com/p/Kiyokan-Judo-Club-100057417311622/" class="social-icon facebook" target="_blank">
+                <a href="https://www.facebook.com/p/Kiyokan-Judo-Club-100057417311622/" class="social-icon facebook"
+                    target="_blank">
                     <i class="fab fa-facebook-f"></i>
                 </a>
             </div>
@@ -45,19 +58,19 @@
                             <h3>Tiger Age (6-8)</h3>
                             <p>Thursday 6:30-7:30</p>
                         </div>
-                        
+
                         <div class="age-group">
                             <h3>Middle Age (9-12)</h3>
                             <p>Tuesday 6:30-7:30</p>
                         </div>
-                        
+
                         <div class="age-group">
                             <h3>Senior (13+)</h3>
                             <p>Tuesday and Thursday 7:40-9:00</p>
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="contact-section">
                     <h2>Contact Information</h2>
                     <div class="contact-grid">
@@ -66,11 +79,12 @@
                             <h3>Main Location</h3>
                             <p>711 Dever Road, Peter Murray Arena<br>Saint John, NB, Canada</p>
                         </div>
-                        
+
                         <div class="contact-item">
                             <i class="fas fa-phone"></i>
                             <h3>Contact Details</h3>
-                            <p>Phone: (506) 343-3824<br>Email: <a href="mailto:H.j.porter@outlook.com">H.j.porter@outlook.com</a></p>
+                            <p>Phone: (506) 343-3824<br>Email: <a
+                                    href="mailto:H.j.porter@outlook.com">H.j.porter@outlook.com</a></p>
                         </div>
                     </div>
                 </div>
@@ -83,11 +97,11 @@
     </footer>
     <script>
         // Mobile menu functionality
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const menuBtn = document.querySelector('.mobile-menu-btn');
             const navLinks = document.querySelector('.nav-links');
-            
-            menuBtn.addEventListener('click', function() {
+
+            menuBtn.addEventListener('click', function () {
                 menuBtn.classList.toggle('active');
                 navLinks.classList.toggle('active');
             });
@@ -102,4 +116,5 @@
         });
     </script>
 </body>
-</html> 
+
+</html>
